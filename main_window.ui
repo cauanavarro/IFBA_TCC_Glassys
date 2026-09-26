@@ -1,0 +1,1564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">/* =========================================================
+   GLASSYS
+   LIGHT THEME
+   PySide6 / Qt Widgets
+   ========================================================= */
+
+
+/* =========================================================
+   1. ESTILO GERAL
+   ========================================================= */
+
+QMainWindow {
+    background-color: #F5F7FA;
+}
+
+QWidget {
+    font-family: &quot;Segoe UI&quot;;
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   2. SIDEBAR
+   ========================================================= */
+
+QFrame#sidebarFrame {
+    background-color: #1F3342;
+    border: none;
+    border-right: 1px solid #D9E0E5;
+}
+
+
+/* ---------- Logo ---------- */
+
+QLabel#logoLabel {
+    color: #FFFFFF;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: none;
+
+    padding-left: 10px;
+}
+
+
+/* ---------- Divisórias ---------- */
+
+QFrame#upperSidebarLine,
+QFrame#bottomSidebarLine {
+    background-color: #385061;
+    color: #385061;
+
+    border: none;
+
+    max-height: 1px;
+}
+
+
+/* ---------- Botões da Sidebar ---------- */
+
+QPushButton#sellButton,
+QPushButton#ordersButton,
+QPushButton#productsButton,
+QPushButton#customersButton,
+QPushButton#prescriptionsButton,
+QPushButton#statisticsButton,
+QPushButton#assistantButton {
+
+    background-color: transparent;
+
+    color: #E8EEF2;
+
+    border: none;
+    border-radius: 6px;
+
+    text-align: left;
+
+    padding-left: 16px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* Hover */
+
+QPushButton#sellButton:hover,
+QPushButton#ordersButton:hover,
+QPushButton#productsButton:hover,
+QPushButton#customersButton:hover,
+QPushButton#prescriptionsButton:hover,
+QPushButton#statisticsButton:hover,
+QPushButton#assistantButton:hover {
+
+    background-color: #2B4659;
+
+    color: #FFFFFF;
+}
+
+
+/* Selecionado */
+
+QPushButton#sellButton:checked,
+QPushButton#ordersButton:checked,
+QPushButton#productsButton:checked,
+QPushButton#customersButton:checked,
+QPushButton#prescriptionsButton:checked,
+QPushButton#statisticsButton:checked,
+QPushButton#assistantButton:checked {
+
+    background-color: #365A72;
+
+    color: #FFFFFF;
+
+    font-weight: 600;
+
+    border-left: 3px solid #8EB4CC;
+
+    padding-left: 13px;
+}
+
+
+/* ---------- Usuário ---------- */
+
+QLabel#userNameLabel {
+    color: #FFFFFF;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+
+    padding-left: 10px;
+}
+
+
+QLabel#userRoleLabel {
+    color: #AFC0CC;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    background-color: transparent;
+    border: none;
+
+    padding-left: 10px;
+}
+
+
+/* =========================================================
+   3. CONTENT FRAME - NOVA VENDA
+   ========================================================= */
+
+QFrame#contentFrame {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+}
+
+
+/* ---------- Título ---------- */
+
+QLabel#pageTitleLabel {
+    color: #111827;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* ---------- Títulos de seção ---------- */
+
+QLabel#categoriesLabel,
+QLabel#productsLabel {
+
+    color: #111827;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   4. CAMPO DE BUSCA
+   ========================================================= */
+
+QLineEdit#productSearch {
+
+    background-color: #FFFFFF;
+
+    color: #1F2937;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 7px;
+
+    padding: 9px 12px;
+
+    font-size: 14px;
+}
+
+
+QLineEdit#productSearch:hover {
+    border: 1px solid #9CA3AF;
+}
+
+
+QLineEdit#productSearch:focus {
+    background-color: #FFFFFF;
+
+    border: 1px solid #4F7FA3;
+}
+
+
+/* =========================================================
+   5. CATEGORIAS
+   ========================================================= */
+
+QWidget#categoryContainer {
+    background-color: transparent;
+
+    border: none;
+}
+
+
+/* ---------- Botões ---------- */
+
+QPushButton#allCategoriesButton,
+QPushButton#frameCategoryButton,
+QPushButton#lensCategoryButton,
+QPushButton#sunglassesCategoryButton,
+QPushButton#contactLensesCategoryButton,
+QPushButton#accessoriesCategoryButton {
+
+    background-color: #FFFFFF;
+
+    color: #374151;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+
+    padding: 7px 13px;
+
+    font-size: 13px;
+}
+
+
+QPushButton#allCategoriesButton:hover,
+QPushButton#frameCategoryButton:hover,
+QPushButton#lensCategoryButton:hover,
+QPushButton#sunglassesCategoryButton:hover,
+QPushButton#contactLensesCategoryButton:hover,
+QPushButton#accessoriesCategoryButton:hover {
+
+    background-color: #F3F6F9;
+
+    color: #24516F;
+
+    border: 1px solid #9CAFC0;
+}
+
+
+QPushButton#allCategoriesButton:pressed,
+QPushButton#frameCategoryButton:pressed,
+QPushButton#lensCategoryButton:pressed,
+QPushButton#sunglassesCategoryButton:pressed,
+QPushButton#contactLensesCategoryButton:pressed,
+QPushButton#accessoriesCategoryButton:pressed {
+
+    background-color: #E8EEF3;
+}
+
+
+QPushButton#allCategoriesButton:checked,
+QPushButton#frameCategoryButton:checked,
+QPushButton#lensCategoryButton:checked,
+QPushButton#sunglassesCategoryButton:checked,
+QPushButton#contactLensesCategoryButton:checked,
+QPushButton#accessoriesCategoryButton:checked {
+
+    background-color: #E7F0F7;
+
+    color: #24516F;
+
+    border: 1px solid #7FA4BF;
+}
+
+
+/* =========================================================
+   6. ÁREA DOS PRODUTOS
+   ========================================================= */
+
+QScrollArea#productScrollArea {
+
+    background-color: #F8F9FA;
+
+    border: 1px solid #E1E5E9;
+    border-radius: 8px;
+}
+
+
+QScrollArea#productScrollArea QWidget#qt_scrollarea_viewport {
+
+    background-color: #F8F9FA;
+
+    border-radius: 8px;
+}
+
+
+QWidget#productsContainer {
+
+    background-color: #F8F9FA;
+
+    border: none;
+}
+
+
+/* =========================================================
+   8. SALE FRAME - SUA VENDA
+   ========================================================= */
+
+QFrame#saleFrame {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+}
+
+
+/* ---------- Título ---------- */
+
+QLabel#yourSaleLabel {
+
+    color: #111827;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   9. SALE SCROLL AREA
+   ========================================================= */
+
+QScrollArea#saleScrollArea {
+
+    background-color: #F8F9FA;
+
+    border: 1px solid #E1E5E9;
+    border-radius: 8px;
+}
+
+
+QScrollArea#saleScrollArea QWidget#qt_scrollarea_viewport {
+
+    background-color: #F8F9FA;
+
+    border-radius: 8px;
+}
+
+
+QWidget#saleLayoutWidgetContents {
+
+    background-color: #F8F9FA;
+
+    border: none;
+}
+
+
+/* =========================================================
+   10. SALE ITEM
+   ========================================================= */
+
+QFrame#saleItem {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #E1E5E9;
+    border-radius: 9px;
+}
+
+
+/* ---------- Container ---------- */
+
+QWidget#productContainer,
+QWidget#productNameAndPrice,
+QWidget#productPriceXQuantityWidget,
+QWidget#quantityButtons {
+
+    background-color: transparent;
+
+    border: none;
+}
+
+
+/* ---------- Nome ---------- */
+
+QLabel#productNameLabel {
+
+    color: #111827;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* ---------- Preço unitário ---------- */
+
+QLabel#productBasePriceLabel {
+
+    color: #4B5563;
+
+    font-size: 13px;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* ---------- Quantidade no preço ---------- */
+
+QLabel#productQuantity {
+
+    color: #4B5563;
+
+    font-size: 13px;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* ---------- Preço total ---------- */
+
+QLabel#productTotalPrice {
+
+    color: #111827;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* ---------- Quantidade ---------- */
+
+QLabel#productQuantityLabel {
+
+    color: #374151;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    background-color: transparent;
+    border: none;
+
+    min-width: 20px;
+}
+
+
+/* =========================================================
+   11. BOTÕES + E -
+   ========================================================= */
+
+QPushButton#decreaseButton,
+QPushButton#increaseButton {
+
+    background-color: #F3F4F6;
+
+    color: #374151;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+
+    min-width: 30px;
+    max-width: 30px;
+
+    min-height: 30px;
+    max-height: 30px;
+
+    padding: 0;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+QPushButton#decreaseButton:hover,
+QPushButton#increaseButton:hover {
+
+    background-color: #E9EEF2;
+
+    color: #24516F;
+
+    border: 1px solid #B8C5CF;
+}
+
+
+QPushButton#decreaseButton:pressed,
+QPushButton#increaseButton:pressed {
+
+    background-color: #DCE6EC;
+}
+
+
+/* =========================================================
+   12. REMOVER ITEM
+   ========================================================= */
+
+QPushButton#removeItem {
+
+    background-color: #FFFFFF;
+
+    color: #6B7280;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+
+    padding: 6px 11px;
+
+    font-size: 13px;
+}
+
+
+QPushButton#removeItem:hover {
+
+    background-color: #FEF2F2;
+
+    color: #B42318;
+
+    border: 1px solid #F0B4B4;
+}
+
+
+QPushButton#removeItem:pressed {
+
+    background-color: #FEE2E2;
+}
+
+
+/* =========================================================
+   13. SUBTOTAL
+   ========================================================= */
+
+QWidget#subTotalValueContainer {
+
+    background-color: transparent;
+
+    border: none;
+}
+
+
+QLabel#subtotalLabel {
+
+    color: #111827;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+QLabel#subtotalValueLabel {
+
+    color: #111827;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   14. FINALIZAR VENDA
+   ========================================================= */
+
+QPushButton#finishSaleButton {
+
+    background-color: #365F7A;
+
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 7px;
+
+    min-height: 38px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+QPushButton#finishSaleButton:hover {
+
+    background-color: #2E526A;
+}
+
+
+QPushButton#finishSaleButton:pressed {
+
+    background-color: #274657;
+}
+
+
+QPushButton#finishSaleButton:disabled {
+
+    background-color: #CBD5DC;
+
+    color: #F8FAFC;
+}
+
+
+/* =========================================================
+   15. SCROLLBARS
+   ========================================================= */
+
+QScrollBar:vertical {
+
+    background-color: #F8F9FA;
+
+    width: 10px;
+
+    margin: 4px 3px 4px 0px;
+
+    border: none;
+
+    border-radius: 5px;
+}
+
+
+QScrollBar::handle:vertical {
+
+    background-color: #C7CDD4;
+
+    min-height: 40px;
+
+    border-radius: 5px;
+}
+
+
+QScrollBar::handle:vertical:hover {
+
+    background-color: #AEB7C1;
+}
+
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+
+    height: 0px;
+
+    border: none;
+
+    background: none;
+}
+
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+
+    background: transparent;
+}
+
+
+/* =========================================================
+   16. BOTÕES GENÉRICOS
+   =========================================================
+   
+   Mantido propositalmente no final.
+   Os estilos específicos acima têm prioridade por
+   utilizarem objectName.
+   ========================================================= */
+
+QPushButton {
+
+    background-color: #FFFFFF;
+
+    color: #1F2937;
+
+    border: 1px solid #D1D5DB;
+
+    border-radius: 6px;
+
+    padding: 7px 12px;
+
+    font-size: 13px;
+}
+
+
+QPushButton:hover {
+
+    background-color: #F3F4F6;
+
+    border: 1px solid #B7BEC7;
+}
+
+
+QPushButton:pressed {
+
+    background-color: #E5E7EB;
+}
+
+
+QPushButton:disabled {
+
+    background-color: #F3F4F6;
+
+    color: #9CA3AF;
+
+    border: 1px solid #E5E7EB;
+}</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="centralLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QFrame" name="sidebarFrame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>220</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="sidebarlLayout">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="logoLabel">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Glassys</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="upperSidebarLine">
+             <property name="styleSheet">
+              <string notr="true">background-color: #344C63;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="sellButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>Medium</fontweight>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Vender</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ordersButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>Medium</fontweight>
+              </font>
+             </property>
+             <property name="text">
+              <string>Pedidos</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="productsButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>Medium</fontweight>
+              </font>
+             </property>
+             <property name="text">
+              <string>Produtos</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="customersButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>Medium</fontweight>
+              </font>
+             </property>
+             <property name="text">
+              <string>Clientes</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="prescriptionsButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>Medium</fontweight>
+              </font>
+             </property>
+             <property name="text">
+              <string>Receitas</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="statisticsButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>Medium</fontweight>
+              </font>
+             </property>
+             <property name="text">
+              <string>Estatísticas</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="assistantButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>Medium</fontweight>
+              </font>
+             </property>
+             <property name="text">
+              <string>Assistente</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="Line" name="bottomSidebarLine">
+             <property name="styleSheet">
+              <string notr="true">background-color: #344C63;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="userNameLabel">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>DemiBold</fontweight>
+              </font>
+             </property>
+             <property name="text">
+              <string>Joana Santana</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="userRoleLabel">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Gerente</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="contentFrame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>320</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="contentLayout">
+           <property name="spacing">
+            <number>16</number>
+           </property>
+           <property name="leftMargin">
+            <number>24</number>
+           </property>
+           <property name="topMargin">
+            <number>24</number>
+           </property>
+           <property name="rightMargin">
+            <number>24</number>
+           </property>
+           <property name="bottomMargin">
+            <number>24</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="pageTitleLabel">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Nova Venda</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="productSearch">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="placeholderText">
+              <string>Buscar produto...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="categoriesLabel">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>DemiBold</fontweight>
+              </font>
+             </property>
+             <property name="text">
+              <string>Categorias</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="categoryContainer" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                 <widget class="QPushButton" name="allCategoriesButton">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Todos</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="frameCategory">
+                  <property name="text">
+                   <string>Armações</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="lensCategoryButton">
+                  <property name="text">
+                   <string>Lentes</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton">
+                  <property name="text">
+                   <string>Óculos de Sol</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="contactLensesCategoryButton">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Lentes de Contato</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="accessoriesCategoryButton">
+                  <property name="text">
+                   <string>Acessórios</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="productsLabel">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>DemiBold</fontweight>
+              </font>
+             </property>
+             <property name="text">
+              <string>Produtos</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="productScrollArea">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="productsContainer">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>516</width>
+                <height>422</height>
+               </rect>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <property name="spacing">
+                <number>6</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="productsGridLayout">
+                 <property name="leftMargin">
+                  <number>12</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>12</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>12</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>12</number>
+                 </property>
+                 <property name="spacing">
+                  <number>16</number>
+                 </property>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="saleFrame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>330</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>16</number>
+           </property>
+           <property name="leftMargin">
+            <number>24</number>
+           </property>
+           <property name="topMargin">
+            <number>24</number>
+           </property>
+           <property name="rightMargin">
+            <number>24</number>
+           </property>
+           <property name="bottomMargin">
+            <number>24</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="yourSaleLabel">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Sua Venda</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="customerContainer" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QVBoxLayout" name="customerContainerLayout"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="saleScrollArea">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="saleLayoutWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>278</width>
+                <height>494</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <layout class="QVBoxLayout" name="saleItemsVLayout"/>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="subTotalValueContainer" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="subTotalLayout">
+                <item>
+                 <widget class="QLabel" name="subtotalLabel">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>-1</pointsize>
+                    <fontweight>DemiBold</fontweight>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Subtotal:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="subtotalValueLabel">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>-1</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>R$ 0000,00</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="finishSaleButton">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>-1</pointsize>
+               <fontweight>DemiBold</fontweight>
+              </font>
+             </property>
+             <property name="text">
+              <string>Finalizar Venda</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

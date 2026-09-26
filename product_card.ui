@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>220</width>
+    <height>266</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>180</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>280</width>
+    <height>280</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* =========================================================
+   PRODUCT CARD
+   ========================================================= */
+
+QFrame#productCard {
+    background-color: #FFFFFF;
+
+    border: 1px solid #DDE3E8;
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   IMAGEM DO PRODUTO
+   ========================================================= */
+
+QLabel#productImageLabel {
+    background-color: #F7F8FA;
+
+    color: #6B7280;
+
+    border: 1px solid #EEF0F2;
+    border-radius: 7px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   NOME DO PRODUTO
+   ========================================================= */
+
+QLabel#productNameLabel {
+    color: #111827;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   PREÇO
+   ========================================================= */
+
+QLabel#productPriceLabel {
+    color: #111827;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   ESTOQUE
+   ========================================================= */
+
+QLabel#productStockLabel {
+    color: #6B7280;
+
+    font-size: 13px;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   BOTÃO ADICIONAR
+   ========================================================= */
+
+QPushButton#addProductButton {
+    background-color: #FFFFFF;
+
+    color: #374151;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+
+    min-height: 34px;
+
+    padding: 6px 12px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* Hover */
+
+QPushButton#addProductButton:hover {
+    background-color: #EEF4F8;
+
+    color: #24516F;
+
+    border: 1px solid #9FB5C5;
+}
+
+
+/* Pressionado */
+
+QPushButton#addProductButton:pressed {
+    background-color: #DDEAF2;
+
+    border: 1px solid #8EAABB;
+}
+
+
+/* Desabilitado */
+
+QPushButton#addProductButton:disabled {
+    background-color: #F3F4F6;
+
+    color: #9CA3AF;
+
+    border: 1px solid #E5E7EB;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="sizeConstraint">
+    <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="productCard">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="cardLayout">
+        <property name="spacing">
+         <number>8</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+        </property>
+        <property name="leftMargin">
+         <number>12</number>
+        </property>
+        <property name="topMargin">
+         <number>12</number>
+        </property>
+        <property name="rightMargin">
+         <number>12</number>
+        </property>
+        <property name="bottomMargin">
+         <number>12</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="productImageLabel">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>110</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>IMAGEM</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="productNameLabel">
+          <property name="font">
+           <font>
+            <pointsize>-1</pointsize>
+            <fontweight>DemiBold</fontweight>
+           </font>
+          </property>
+          <property name="text">
+           <string>Rayban RX123</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="productPriceLabel">
+          <property name="font">
+           <font>
+            <pointsize>-1</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>R$ 599,90</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="productStockLabel">
+          <property name="text">
+           <string>Estoque: 4</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addProductButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>48</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Adicionar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

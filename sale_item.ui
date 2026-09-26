@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>265</width>
+    <height>120</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>120</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>124</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* =========================================================
+   SALE ITEM
+   ========================================================= */
+
+QFrame#saleItem {
+    background-color: #FFFFFF;
+
+    border: 1px solid #E1E5E9;
+    border-radius: 9px;
+}
+
+
+/* =========================================================
+   CONTAINER DO PRODUTO
+   ========================================================= */
+
+QWidget#productContainer {
+    background-color: transparent;
+    border: none;
+}
+
+QWidget#productNameAndPrice {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   NOME DO PRODUTO
+   ========================================================= */
+
+QLabel#productNameLabel {
+    color: #111827;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   PREÇO UNITÁRIO × QUANTIDADE
+   ========================================================= */
+
+QWidget#productPricexQuantityWidget {
+    background-color: transparent;
+    border: none;
+}
+
+QLabel#productBasePriceLabel {
+    color: #4B5563;
+
+    font-size: 13px;
+
+    background-color: transparent;
+    border: none;
+}
+
+QLabel#productQuantity {
+    color: #4B5563;
+
+    font-size: 13px;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   PREÇO TOTAL DO ITEM
+   ========================================================= */
+
+QLabel#productTotalPrice {
+    color: #111827;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   ÁREA DOS BOTÕES
+   ========================================================= */
+
+QWidget#quantityButtons {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* =========================================================
+   BOTÃO -
+   ========================================================= */
+
+QPushButton#decreaseButton {
+
+    background-color: #F3F4F6;
+
+    color: #374151;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+
+    min-width: 30px;
+    max-width: 30px;
+
+    min-height: 30px;
+    max-height: 30px;
+
+    padding: 0;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+QPushButton#decreaseButton:hover {
+
+    background-color: #E9EEF2;
+
+    color: #24516F;
+
+    border: 1px solid #B8C5CF;
+}
+
+QPushButton#decreaseButton:pressed {
+
+    background-color: #DCE6EC;
+}
+
+QPushButton#decreaseButton:disabled {
+	color: #C3C3C3
+}
+
+/* =========================================================
+   BOTÃO +
+   ========================================================= */
+
+QPushButton#increaseButton {
+
+    background-color: #F3F4F6;
+
+    color: #374151;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+
+    min-width: 30px;
+    max-width: 30px;
+
+    min-height: 30px;
+    max-height: 30px;
+
+    padding: 0;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+QPushButton#increaseButton:hover {
+
+    background-color: #E9EEF2;
+
+    color: #24516F;
+
+    border: 1px solid #B8C5CF;
+}
+
+QPushButton#increaseButton:pressed {
+
+    background-color: #DCE6EC;
+}
+
+QPushButton#increaseButton:disabled {
+	color: #C3C3C3
+}
+/* =========================================================
+   QUANTIDADE
+   ========================================================= */
+
+QLabel#productQuantityLabel {
+
+    color: #374151;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    background-color: transparent;
+    border: none;
+
+    min-width: 20px;
+}
+
+
+/* =========================================================
+   BOTÃO REMOVER
+   ========================================================= */
+
+QPushButton#removeItem {
+
+    background-color: #FFFFFF;
+
+    color: #6B7280;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+
+    padding: 6px 11px;
+
+    font-size: 13px;
+}
+
+QPushButton#removeItem:hover {
+
+    background-color: #FEF2F2;
+
+    color: #B42318;
+
+    border: 1px solid #F0B4B4;
+}
+
+QPushButton#removeItem:pressed {
+
+    background-color: #FEE2E2;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="saleItem">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="cardLayout">
+        <property name="spacing">
+         <number>8</number>
+        </property>
+        <property name="leftMargin">
+         <number>12</number>
+        </property>
+        <property name="topMargin">
+         <number>12</number>
+        </property>
+        <property name="rightMargin">
+         <number>12</number>
+        </property>
+        <property name="bottomMargin">
+         <number>12</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="productContainer" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="productContainerLayout">
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="productNameAndPrice" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <layout class="QVBoxLayout" name="productNameAndPriceLayout">
+                  <property name="spacing">
+                   <number>7</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="productNameLabel">
+                    <property name="font">
+                     <font>
+                      <pointsize>-1</pointsize>
+                      <fontweight>DemiBold</fontweight>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Ray-Ban RX123</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="productPricexQuantityWidget" native="true">
+                    <layout class="QHBoxLayout" name="horizontalLayout_4">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <layout class="QHBoxLayout" name="productPricexQuantityLayout">
+                       <item>
+                        <widget class="QLabel" name="productBasePriceLabel">
+                         <property name="font">
+                          <font>
+                           <pointsize>-1</pointsize>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>R$ 599,90 x</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="productPricexQuantityHS">
+                         <property name="orientation">
+                          <enum>Qt::Orientation::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="productTotalPriceLabel">
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>R$ 599,90</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="quantityButtons" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="quantityButtonsLayout">
+             <item>
+              <spacer name="qttButtonHSpacerL">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="decreaseButton">
+               <property name="minimumSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="productQuantityLabel">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>1</string>
+               </property>
+               <property name="scaledContents">
+                <bool>false</bool>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="increaseButton">
+               <property name="minimumSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>+</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="qttButtonHSpacerR">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="removeButton">
+               <property name="minimumSize">
+                <size>
+                 <width>90</width>
+                 <height>28</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Remover</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

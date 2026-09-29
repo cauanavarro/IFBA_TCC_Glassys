@@ -99,3 +99,15 @@ class CustomerSelector(QFrame):
         self.ui.customerResultsList.clear()
 
         self.display_customers(self.customers)
+    def reset(self):
+
+        self.ui.selectedCustomerFrame.hide()
+
+        self.ui.customerSearchInput.show()
+        self.ui.customerResultsList.show()
+
+        self.ui.customerSearchInput.clear()
+
+        self.display_customers(
+            self.customers
+        )

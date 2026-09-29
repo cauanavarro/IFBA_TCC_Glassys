@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 20.0.1, 2026-09-25T22:26:48. -->
+<!-- Written by QtCreator 20.0.1, 2026-09-28T16:41:34. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -155,6 +155,27 @@
      <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
      <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste</value>
     </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.10">
+     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+     <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
+     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+     <valuelist type="QVariantList" key="Analyzer.Valgrind.SuppressionFiles"/>
+     <valuelist type="QVariantList" key="CustomOutputParsers"/>
+     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+     <value type="UnknownType" key="PE.EnvironmentAspect.Changes"></value>
+     <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+     <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph &quot;dwarf,4096&quot; -F 250</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">customer_selector.py</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.</value>
+     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste/customer_selector.py</value>
+     <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">true</value>
+     <value type="QString" key="ProjectExplorer.RunConfiguration.UniqueId"></value>
+     <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\anjos.c\OneDrive - Elettric 80\Documentos\teste\customer_selector.py</value>
+     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+     <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste</value>
+    </valuemap>
     <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
      <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
      <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
@@ -279,7 +300,49 @@
      <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
      <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste</value>
     </valuemap>
-    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">8</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.8">
+     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+     <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
+     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+     <valuelist type="QVariantList" key="Analyzer.Valgrind.SuppressionFiles"/>
+     <valuelist type="QVariantList" key="CustomOutputParsers"/>
+     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+     <value type="UnknownType" key="PE.EnvironmentAspect.Changes"></value>
+     <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+     <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph &quot;dwarf,4096&quot; -F 250</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">ui_finalize_sale_dialog.py</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.</value>
+     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste/ui_finalize_sale_dialog.py</value>
+     <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">true</value>
+     <value type="QString" key="ProjectExplorer.RunConfiguration.UniqueId"></value>
+     <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\anjos.c\OneDrive - Elettric 80\Documentos\teste\ui_finalize_sale_dialog.py</value>
+     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+     <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.9">
+     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+     <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
+     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+     <valuelist type="QVariantList" key="Analyzer.Valgrind.SuppressionFiles"/>
+     <valuelist type="QVariantList" key="CustomOutputParsers"/>
+     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+     <value type="UnknownType" key="PE.EnvironmentAspect.Changes"></value>
+     <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+     <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph &quot;dwarf,4096&quot; -F 250</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">finalize_sale_dialog.py</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.</value>
+     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste/finalize_sale_dialog.py</value>
+     <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">true</value>
+     <value type="QString" key="ProjectExplorer.RunConfiguration.UniqueId"></value>
+     <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\anjos.c\OneDrive - Elettric 80\Documentos\teste\finalize_sale_dialog.py</value>
+     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+     <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste</value>
+    </valuemap>
+    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">11</value>
     <value type="QString" key="python">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste/.qtcreator/Python_3_14_7venv/Scripts/python.exe</value>
     <value type="QString" key="venv">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste/.qtcreator/Python_3_14_7venv</value>
    </valuemap>
@@ -335,6 +398,27 @@
     <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">true</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.UniqueId"></value>
     <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\anjos.c\OneDrive - Elettric 80\Documentos\teste\ui_main_window.py</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.10">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.SuppressionFiles"/>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <value type="UnknownType" key="PE.EnvironmentAspect.Changes"></value>
+    <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+    <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph &quot;dwarf,4096&quot; -F 250</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">customer_selector.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste/customer_selector.py</value>
+    <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">true</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.UniqueId"></value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\anjos.c\OneDrive - Elettric 80\Documentos\teste\customer_selector.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste</value>
@@ -463,7 +547,49 @@
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste</value>
    </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">8</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.8">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.SuppressionFiles"/>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <value type="UnknownType" key="PE.EnvironmentAspect.Changes"></value>
+    <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+    <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph &quot;dwarf,4096&quot; -F 250</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">ui_finalize_sale_dialog.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste/ui_finalize_sale_dialog.py</value>
+    <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">true</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.UniqueId"></value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\anjos.c\OneDrive - Elettric 80\Documentos\teste\ui_finalize_sale_dialog.py</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.9">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="Analyzer.Valgrind.SuppressionFiles"/>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <value type="UnknownType" key="PE.EnvironmentAspect.Changes"></value>
+    <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+    <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph &quot;dwarf,4096&quot; -F 250</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">finalize_sale_dialog.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste/finalize_sale_dialog.py</value>
+    <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">true</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.UniqueId"></value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\anjos.c\OneDrive - Elettric 80\Documentos\teste\finalize_sale_dialog.py</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/anjos.c/OneDrive - Elettric 80/Documentos/teste</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">11</value>
   </valuemap>
  </data>
  <data>

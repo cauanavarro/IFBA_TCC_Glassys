@@ -7,6 +7,7 @@ from ui_customer_selector import Ui_Form
 class CustomerSelector(QFrame):
 
     customer_selected = Signal(dict)
+    customer_cleared = Signal()
 
     def __init__(self):
         super().__init__()
@@ -97,8 +98,10 @@ class CustomerSelector(QFrame):
 
         self.ui.customerSearchInput.clear()
         self.ui.customerResultsList.clear()
-
+        
         self.display_customers(self.customers)
+        self.customer_cleared.emit()
+        
     def reset(self):
 
         self.ui.selectedCustomerFrame.hide()

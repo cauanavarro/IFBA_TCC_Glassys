@@ -26,13 +26,18 @@
    1. ESTILO GERAL
    ========================================================= */
 
-QMainWindow {
+QMainWindow, QStackedWidget {
     background-color: #F5F7FA;
 }
 
 QWidget {
     font-family: &quot;Segoe UI&quot;;
     color: #1F2937;
+}
+
+QMessageBox{
+	background-color: #F5F7FA;
+	color: black;
 }
 
 

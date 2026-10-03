@@ -2,7 +2,8 @@ import sys
 
 from PySide6.QtWidgets import (
     QApplication,
-    QMainWindow
+    QMainWindow,
+    QButtonGroup
 )
 
 from ui_main_window import Ui_MainWindow
@@ -17,6 +18,7 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        self.setup_sidebar_buttons()
         self.setup_pages()
         self.setup_navigation()
 
@@ -37,6 +39,7 @@ class MainWindow(QMainWindow):
         self.ui.pagesStackedWidget.addWidget(
             self.sale_page
         )
+
 
     # =========================================================
     # NAVEGAÇÃO
@@ -65,14 +68,14 @@ class MainWindow(QMainWindow):
             page
         )
 
-        self.select_page(
-            selected_button
-        )
+        selected_button.setChecked(True)
 
-    def select_page(
-        self,
-        selected_button
-    ):
+
+    def setup_sidebar_buttons(self):
+
+        self.sidebar_button_group = QButtonGroup(self)
+
+        self.sidebar_button_group.setExclusive(True)
 
         buttons = [
             self.ui.sellButton,
@@ -85,12 +88,11 @@ class MainWindow(QMainWindow):
         ]
 
         for button in buttons:
+            button.setCheckable(True)
 
-            button.setChecked(
-                button == selected_button
+            self.sidebar_button_group.addButton(
+                button
             )
-
-
 app = QApplication(sys.argv)
 
 window = MainWindow()

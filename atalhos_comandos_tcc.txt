@@ -1,0 +1,28 @@
+pyside6-uic main_window.ui -o ui_main_window.py
+pyside6-uic product_card.ui -o ui_product_card.py
+pyside6-uic sale_item.ui -o ui_sale_item.py
+pyside6-uic customer_selector.ui -o ui_customer_selector.py
+pyside6-uic finalize_sale_dialog.ui -o ui_finalize_sale_dialog.py
+pyside6-uic sale_page.ui -o ui_sale_page.py
+
+pip install -r requirements.txt --upgrade
+
+qwen3:14b
+
+
+Objetivos de hoje:
+Fazer a parte de pesquisa da tela de vendas
+Criar o banco de dados com o comando SQL gerado pelo diagrama feito no drawdb
+Futuros:
+Conectar a aplicação ao DB
+Criar janela de criar/editar objeto, será uma janela em formato de formulário.
+Criar as telas de exibição de dados em formato de lista, como: clientes, funcionários e produtos
+Criar tela de receitas
+Criar tela de assistente
+
+
+postgres senha 1805
+
+Cluster 80 - temporário
+
+Avaliar IN_2 e IN_2_R - Linha 4: Problema - LGV ficando muito tempo parado esperando os outros saírem, verificar possíveis escapes e avaliar regras de tráfego

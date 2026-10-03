@@ -7,5 +7,5 @@ def get_connection():
         port=5432,
         dbname="glassys",
         user="postgres",
-        password="1805"
+        password=""
     )

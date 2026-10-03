@@ -13,6 +13,242 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">/* =========================================================
+   FINALIZE SALE DIALOG
+   ========================================================= */
+
+QDialog#finalizeSaleDialog {
+    background-color: #FFFFFF;
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+QDialog#finalizeSaleDialog QLabel#titleLabel {
+    color: #111827;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: none;
+
+    padding-bottom: 4px;
+}
+
+
+/* =========================================================
+   TÍTULOS DOS CAMPOS
+   ========================================================= */
+
+QDialog#finalizeSaleDialog QLabel#customerTitleLabel,
+QDialog#finalizeSaleDialog QLabel#totalTitleLabel,
+QDialog#finalizeSaleDialog QLabel#paymentMethodsTitleLabel {
+    color: #374151;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+
+    padding-top: 4px;
+}
+
+
+/* =========================================================
+   CLIENTE
+   ========================================================= */
+
+QDialog#finalizeSaleDialog QLabel#customerNameLabel {
+    color: #111827;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    background-color: #F8F9FA;
+
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+
+    padding: 9px 11px;
+}
+
+
+/* =========================================================
+   VALOR TOTAL
+   ========================================================= */
+
+QDialog#finalizeSaleDialog QLabel#totalValueLabel {
+    color: #24516F;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: none;
+
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+
+/* =========================================================
+   FORMA DE PAGAMENTO
+   ========================================================= */
+
+QDialog#finalizeSaleDialog QComboBox#paymentComboBox {
+    background-color: #FFFFFF;
+
+    color: #1F2937;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+
+    padding: 8px 10px;
+
+    min-height: 20px;
+
+    font-size: 13px;
+}
+
+
+QDialog#finalizeSaleDialog QComboBox#paymentComboBox:hover {
+    border: 1px solid #9CAFC0;
+}
+
+
+QDialog#finalizeSaleDialog QComboBox#paymentComboBox:focus {
+    border: 1px solid #4F7FA3;
+}
+
+
+/* ---------- Seta do ComboBox ---------- */
+
+QDialog#finalizeSaleDialog QComboBox#paymentComboBox::drop-down {
+    border: none;
+
+    width: 30px;
+}
+
+
+/* =========================================================
+   LISTA DO COMBOBOX
+   ========================================================= */
+
+QDialog#finalizeSaleDialog QComboBox#paymentComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+
+    color: #1F2937;
+
+    border: 1px solid #D1D5DB;
+
+    selection-background-color: #E7F0F7;
+    selection-color: #24516F;
+
+    outline: none;
+
+    padding: 4px;
+}
+
+
+/* =========================================================
+   CONTAINER DOS BOTÕES
+   ========================================================= */
+
+QDialog#finalizeSaleDialog QWidget#finalizeSaleButtonsContainer {
+    background-color: transparent;
+
+    border: none;
+}
+
+
+/* =========================================================
+   CONFIRMAR VENDA
+   ========================================================= */
+
+QDialog#finalizeSaleDialog QPushButton#confirmSaleButton {
+    background-color: #365F7A;
+
+    color: #FFFFFF;
+
+    border: 1px solid #365F7A;
+    border-radius: 7px;
+
+    min-height: 38px;
+
+    padding: 7px 16px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+QDialog#finalizeSaleDialog QPushButton#confirmSaleButton:hover {
+    background-color: #2E526A;
+
+    border: 1px solid #2E526A;
+}
+
+
+QDialog#finalizeSaleDialog QPushButton#confirmSaleButton:pressed {
+    background-color: #274657;
+
+    border: 1px solid #274657;
+}
+
+
+QDialog#finalizeSaleDialog QPushButton#confirmSaleButton:disabled {
+    background-color: #CBD5DC;
+
+    color: #F8FAFC;
+
+    border: 1px solid #CBD5DC;
+}
+
+
+/* =========================================================
+   CANCELAR
+   ========================================================= */
+
+QDialog#finalizeSaleDialog QPushButton#cancelSaleButton {
+    background-color: #FFFFFF;
+
+    color: #4B5563;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 7px;
+
+    min-height: 38px;
+
+    padding: 7px 16px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+QDialog#finalizeSaleDialog QPushButton#cancelSaleButton:hover {
+    background-color: #FEF2F2;
+
+    color: #B42318;
+
+    border: 1px solid #F0B4B4;
+}
+
+
+QDialog#finalizeSaleDialog QPushButton#cancelSaleButton:pressed {
+    background-color: #FEE2E2;
+
+    color: #991B1B;
+
+    border: 1px solid #ECA5A5;
+}</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -20,7 +256,7 @@
       <widget class="QLabel" name="titleLabel">
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>-1</pointsize>
          <bold>true</bold>
         </font>
        </property>
@@ -33,8 +269,8 @@
       <widget class="QLabel" name="customerTitleLabel">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
-         <bold>true</bold>
+         <pointsize>-1</pointsize>
+         <fontweight>DemiBold</fontweight>
         </font>
        </property>
        <property name="text">
@@ -53,8 +289,8 @@
       <widget class="QLabel" name="totalTitleLabel">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
-         <bold>true</bold>
+         <pointsize>-1</pointsize>
+         <fontweight>DemiBold</fontweight>
         </font>
        </property>
        <property name="text">
@@ -73,8 +309,8 @@
       <widget class="QLabel" name="paymentMethodsTitleLabel">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
-         <bold>true</bold>
+         <pointsize>-1</pointsize>
+         <fontweight>DemiBold</fontweight>
         </font>
        </property>
        <property name="text">
@@ -103,16 +339,28 @@
         <item>
          <layout class="QHBoxLayout" name="finalizeSaleButtonsLayout">
           <item>
-           <widget class="QPushButton" name="confirmSaleButton">
+           <widget class="QPushButton" name="cancelSaleButton">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
             <property name="text">
-             <string>Confirmar Venda</string>
+             <string>Cancelar</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="cancelSaleButton">
+           <widget class="QPushButton" name="confirmSaleButton">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
             <property name="text">
-             <string>Cancelar</string>
+             <string>Confirmar Venda</string>
             </property>
            </widget>
           </item>

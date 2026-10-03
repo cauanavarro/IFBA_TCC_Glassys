@@ -69,6 +69,10 @@ class SalePage(QWidget):
             self.select_customer
         )
 
+        self.customer_selector.customer_cleared.connect(
+            self.clear_customer
+        )
+        
         # -------------------------
         # Botão finalizar
         # -------------------------
@@ -467,4 +471,14 @@ class SalePage(QWidget):
 
         self.load_products(
             force=True
+        )
+
+    # =========================================================
+    # LIMPAR SELEÇÃO DE CLIENTE
+    # =========================================================
+
+    def clear_customer(self):
+
+        self.venda_atual.selecionar_cliente(
+            None
         )
